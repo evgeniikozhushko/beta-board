@@ -1,7 +1,10 @@
-import Image from "next/image";
-
-export default function Home() {
+import ThemeToggle from "@/components/ThemeToggle";
+export default function HomePage() {
   return (
-    <h1>Hello World</h1>
+    <>
+      <ThemeToggle />
+      <h1 className="">Hello beta board</h1>
+    </>
+
   );
 }
