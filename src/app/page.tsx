@@ -15,13 +15,14 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
-import { CalendarDateRangePicker } from "@/app/(app)/examples/dashboard/components/date-range-picker"
-import { MainNav } from "@/app/(app)/examples/dashboard/components/main-nav"
-import { Overview } from "@/app/(app)/examples/dashboard/components/overview"
-import { RecentSales } from "@/app/(app)/examples/dashboard/components/recent-sales"
-import { Search } from "@/app/(app)/examples/dashboard/components/search"
-import TeamSwitcher from "@/app/(app)/examples/dashboard/components/team-switcher"
-import { UserNav } from "@/app/(app)/examples/dashboard/components/user-nav"
+import { CalendarDateRangePicker } from "@/components/date-range-picker"
+import { MainNav } from "@/components/main-nav"
+import { Overview } from "@/components/overview"
+import { RecentSales } from "@/components/recent-sales"
+import { Search } from "@/components/search"
+import TeamSwitcher from "@/components/team-switcher"
+import { UserNav } from "@/components/user-nav"
+import ThemeToggle from "@/components/ThemeToggle"
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -54,6 +55,7 @@ export default function DashboardPage() {
             <MainNav className="mx-6" />
             <div className="ml-auto flex items-center space-x-4">
               <Search />
+              <ThemeToggle />
               <UserNav />
             </div>
           </div>
